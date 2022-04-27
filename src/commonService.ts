@@ -1,7 +1,7 @@
 /*
  * @Author: fuzhenghao
  * @Date: 2022-03-03 22:49:18
- * @LastEditTime: 2022-04-26 17:42:12
+ * @LastEditTime: 2022-04-27 19:25:01
  * @LastEditors: fuzhenghao
  * @Description:
  * @FilePath: \pro1111\src\commonService.ts
@@ -68,7 +68,7 @@ export function policeFilesImport(data, callback, permission = null) {
       callback(response.data);
       return;
     }
-    message.error(response.message ? response.message : '导入失败');
+    message.error(response.message ?? '导入失败');
   });
 }
 
